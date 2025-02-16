@@ -1,0 +1,18 @@
+# Dependências principais
+pandas==1.5.3
+numpy==1.24.3
+matplotlib==3.7.1
+seaborn==0.12.2
+scikit-learn==1.2.2
+scipy==1.10.1
+
+# Para execução de notebooks
+jupyter==1.0.0
+ipykernel==6.22.0
+
+# Para salvar e carregar modelos treinados
+joblib==1.2.0
+pickle-mixin==1.0.2
+
+# Para criação de relatórios e PDF
+fpdf==1.7.2
