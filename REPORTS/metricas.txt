@@ -1,1 +1,41 @@
+# 📊 Relatório de Métricas - Predição do Nível de Maturação das Maçãs 🍏
 
+## 📌 Modelos Testados e Desempenho
+
+| Modelo                | Acurácia  | Precisão Média | Recall Médio | F1-Score Médio |
+|----------------------|-----------|---------------|-------------|--------------|
+| Random Forest       | 77.57%    | 76.85%        | 74.94%      | 75.89%       |
+| SVM (Melhor Modelo) | 81.00%    | 80.21%        | 78.67%      | 79.43%       |
+| KNN                 | 79.02%    | 77.85%        | 75.22%      | 76.51%       |
+| Regressão Logística | 72.16%    | 70.98%        | 68.32%      | 69.63%       |
+
+---
+
+## 🔍 **Matriz de Confusão - Melhor Modelo (SVM)**
+
+A tabela abaixo apresenta a matriz de confusão do modelo **SVM**, destacando os erros e acertos por categoria.
+
+| Classe Real \ Previsto | Madura | Verde | Muito Madura |
+|-----------------------|--------|-------|--------------|
+| **Madura**           | 499    | 12    | 12           |
+| **Verde**            | 66     | 54    | 0            |
+| **Muito Madura**     | 79     | 1     | 35           |
+
+---
+
+## 📊 **Principais Insights**
+✅ **SVM foi o melhor modelo**, com **81% de acurácia**, superando os outros métodos.  
+✅ A classe **"Madura"** foi a mais fácil de prever corretamente.  
+⚠️ **Classes "Verde" e "Muito Madura" tiveram mais erros**, o que sugere um ajuste nos dados ou no modelo.  
+📌 A variável mais importante para a predição foi **Doçura**, seguida de **Tamanho** e **Peso**.  
+
+---
+
+## 📌 **Possíveis Melhorias**
+🔹 **Ajuste de hiperparâmetros** para melhorar a predição das classes "Verde" e "Muito Madura".  
+🔹 **Testar técnicas de balanceamento de classes** para reduzir erros em categorias minoritárias.  
+🔹 **Incluir novas variáveis derivadas**, como uma métrica combinada de **suculência e acidez**.  
+
+---
+
+📌 **Última Atualização:** `16/02/2025`
